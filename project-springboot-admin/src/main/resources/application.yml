@@ -1,0 +1,29 @@
+server:
+  port: 1111
+spring:
+  application:
+    name: admin-server
+  mail:
+    host: smtp.qq.com
+    username: 1469039862@qq.com
+    password: sfusnycshhtciihj
+    properties:
+        mail:
+          smtp:
+            auth: true
+            starttls:
+              enable: true
+              required: true
+  boot:
+    admin:
+      notify:
+        mail:
+          from: 1469039862@qq.com
+          to: 2247589910@qq.com
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+  client:
+    registryFetchIntervalSeconds: 5
+    service-url:
+      defaultZone: http://localhost:8888/eureka/

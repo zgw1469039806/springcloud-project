@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: config-center
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitlab.com/zgw1469039806/config-center.git
+          clone-on-start: true
+          search-paths: test
+          username: zgw1469039806
+          password: 0414zgwapn
+server:
+  port: 9999

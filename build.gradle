@@ -1,0 +1,73 @@
+group 'com.wang'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+buildscript {
+    ext {//定义一个变量，统一规定springboot的版本
+        springBootVersion = '1.5.10.RELEASE'
+    }
+    repositories {
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        jcenter()
+        mavenCentral()
+        //Spring repo
+        maven { url "http://repo.spring.io/snapshot" }
+        maven { url "http://repo.spring.io/milestone" }
+        maven { url "http://repo.spring.io/release" }
+        maven { url 'http://repo.spring.io/plugins-snapshot' }
+    }
+
+    dependencies {//用来打包
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+//设定当前所有的项目的配置
+allprojects {
+    group 'com.ssx'
+    version '1.0-SNAPSHOT'
+
+    ext {
+        springCloudVersion = 'Edgware.SR2'
+    }
+
+    repositories {
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        jcenter()
+        mavenCentral()
+        //Spring repo
+        maven { url "http://repo.spring.io/snapshot" }
+        maven { url "http://repo.spring.io/milestone" }
+        maven { url "http://repo.spring.io/release" }
+        maven { url 'http://repo.spring.io/plugins-snapshot' }
+    }
+}
+//设定当前模块项目中的配置
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'idea'
+    apply plugin: 'spring-boot'
+
+    dependencies {
+        //使用springboot-web组件，但是排除tomcat组件
+        compile('org.springframework.boot:spring-boot-starter-web') {
+            exclude module: "spring-boot-starter-tomcat"
+        }
+        //使用undertow作为应用服务,作为servlet容器
+        compile 'org.springframework.boot:spring-boot-starter-undertow'
+        //使用健康检查组件
+        compile 'org.springframework.boot:spring-boot-starter-actuator'
+        testCompile(
+                group: 'junit', name: 'junit', version: '4.12'
+        )
+    }
+
+    dependencyManagement {
+        imports {
+            //加上此配置后，如果需要引用springcloud的组件，就不需要再提供版本信息
+            mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+        }
+    }
+}

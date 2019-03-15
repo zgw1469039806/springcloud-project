@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="$USER_HOME$/gradle/gradle-5.0" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/config-center" />
+            <option value="$PROJECT_DIR$/project-activemq" />
+            <option value="$PROJECT_DIR$/project-shopping-mall" />
+            <option value="$PROJECT_DIR$/project-solr" />
+            <option value="$PROJECT_DIR$/project-springboot-admin" />
+            <option value="$PROJECT_DIR$/project-zuul" />
+            <option value="$PROJECT_DIR$/reigster-conter-eureka" />
+            <option value="$PROJECT_DIR$/server-ribbon" />
+            <option value="$PROJECT_DIR$/zipkin-server" />
+          </set>
+        </option>
+        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

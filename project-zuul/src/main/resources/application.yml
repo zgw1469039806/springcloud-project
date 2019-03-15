@@ -1,0 +1,17 @@
+server:
+  port: 15000
+spring:
+  application:
+    name: project-zuul
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka/
+  instance:
+    prefer-ip-address: true
+zuul:
+  routes:
+    project-service:
+      path: /ps/**
+      #url: localhost:10001
+      serviceId: project-solr

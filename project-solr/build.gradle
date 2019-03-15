@@ -1,0 +1,11 @@
+
+
+dependencies {
+    compile 'org.springframework.cloud:spring-cloud-starter-eureka'
+    compile 'org.springframework.cloud:spring-cloud-starter-sleuth'
+    //集成zipkin
+    compile 'org.springframework.cloud:spring-cloud-sleuth-zipkin'
+
+    compile group: 'de.codecentric', name: 'spring-boot-admin-starter-server', version: '1.5.7'
+ 
+}

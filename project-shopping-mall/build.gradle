@@ -1,0 +1,15 @@
+
+
+dependencies {
+    compile 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    //eureka客户端组件
+    compile 'org.springframework.cloud:spring-cloud-starter-eureka'
+
+    compile 'org.springframework.cloud:spring-cloud-starter-sleuth'
+    compile 'org.springframework.cloud:spring-cloud-sleuth-zipkin'
+    //hystrix熔断器
+    compile 'org.springframework.cloud:spring-cloud-starter-hystrix'
+    //分布式配置客户端
+    compile 'org.springframework.cloud:spring-cloud-starter-config'
+    compile group: 'de.codecentric', name: 'spring-boot-admin-starter-server', version: '1.5.7'
+}

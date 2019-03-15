@@ -1,0 +1,5 @@
+
+dependencies {
+    compile 'org.springframework.cloud:spring-cloud-config-server'
+    compile group: 'de.codecentric', name: 'spring-boot-admin-starter-server', version: '1.5.7'
+}

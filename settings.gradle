@@ -1,0 +1,12 @@
+rootProject.name = 'springcloud-project'
+include 'reigster-conter-eureka'
+include 'reigster-conter-eureka'
+include 'project-shopping-mall'
+include 'project-solr'
+include 'zipkin-server'
+include 'project-zuul'
+include 'config-center'
+include 'server-ribbon'
+include 'project-activemq'
+include 'project-springboot-admin'
+

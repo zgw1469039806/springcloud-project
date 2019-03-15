@@ -1,0 +1,20 @@
+server:
+  port: 10002
+spring:
+  application:
+    name: project-solr
+  zipkin:
+    base-url: http://localhost:9999/
+  sleuth:
+    sampler:
+      percentage: 1.0   #0.1-1.0链路跟踪的数据上传的概率
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka/
+  instance:
+    prefer-ip-address: true
+logging:
+  path: /Users/mac/logs/solr
+  level:
+    org.gw.shopping.mall: info
