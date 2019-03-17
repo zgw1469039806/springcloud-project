@@ -11,3 +11,7 @@ https://www.cnblogs.com/zgwjava/p/10447542.html
 SpringCloud 的链路追踪，相关文章：
 
 https://www.cnblogs.com/zgwjava/p/10451381.html
+
+SpringCloud 的分布式配置中心，相关文章：
+
+https://www.cnblogs.com/zgwjava/p/10547876.html
