@@ -22,4 +22,11 @@ public class SolrSearchController {
         logger.info("执行查询、、、、");
         return "从solr查询到数据";
     }
+
+    @RequestMapping("/hello")
+    public String hello()
+    {
+        System.out.println("访问solr");
+        return "hello";
+    }
 }

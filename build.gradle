@@ -1,4 +1,4 @@
-group 'com.wang'
+group 'com.zhang'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
@@ -49,7 +49,9 @@ subprojects {
     apply plugin: 'java'
     apply plugin: 'idea'
     apply plugin: 'spring-boot'
-
+    
+    
+    
     dependencies {
         //使用springboot-web组件，但是排除tomcat组件
         compile('org.springframework.boot:spring-boot-starter-web') {

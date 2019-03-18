@@ -1,0 +1,8 @@
+
+dependencies {
+
+    compile('org.springframework.boot:spring-boot-starter-amqp')
+    compile('org.springframework.boot:spring-boot-starter-test')
+    
+    compile('org.springframework.boot:spring-boot-starter-parent')
+}

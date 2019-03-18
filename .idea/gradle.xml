@@ -10,10 +10,13 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/config-center" />
+            <option value="$PROJECT_DIR$/project-Feign" />
             <option value="$PROJECT_DIR$/project-activemq" />
+            <option value="$PROJECT_DIR$/project-nacos-config-conter" />
             <option value="$PROJECT_DIR$/project-shopping-mall" />
             <option value="$PROJECT_DIR$/project-solr" />
             <option value="$PROJECT_DIR$/project-springboot-admin" />
+            <option value="$PROJECT_DIR$/project-springboot-rabbitmq" />
             <option value="$PROJECT_DIR$/project-zuul" />
             <option value="$PROJECT_DIR$/reigster-conter-eureka" />
             <option value="$PROJECT_DIR$/server-ribbon" />

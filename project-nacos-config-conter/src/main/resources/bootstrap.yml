@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: nacos-config-conter
+  cloud:
+    nacos:
+      config:
+        server-addr: 172.20.10.2:8848
+        file-extension: yaml
